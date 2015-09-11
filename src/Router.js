@@ -16,6 +16,8 @@ import ContactPage from './components/ContactPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
 
+import TestPage from './components/TestPage';
+
 const router = new Router(on => {
 
   on('*', async (state, next) => {
@@ -42,6 +44,8 @@ const router = new Router(on => {
   on('/news', async () => <NewsPage />);
 
   on('/media', async () => <MediaPage />);
+
+  on('/test', async () => <TestPage />);
 
   on('*', async (state) => {
     const content = await http.get(`/api/content?path=${state.path}`);

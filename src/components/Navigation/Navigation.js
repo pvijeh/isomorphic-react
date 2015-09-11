@@ -31,6 +31,8 @@ class Navigation {
           <a className="Navigation-link" href="/media" onClick={Link.handleClick}>Media</a>
           <span className="Navigation-spacer"> | </span>
           <a className="Navigation-link" href="/contact" onClick={Link.handleClick}>Contact</a>
+          <span className="Navigation-spacer"> | </span>
+          <a className="Navigation-link" href="/test" onClick={Link.handleClick}>Test</a>
       </div>
     );
   }
