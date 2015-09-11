@@ -8,7 +8,6 @@ var AppStore = assign({}, EventEmitter.prototype, {
 
     getAll : function() {
         return 'tommy Gear'; 
-        console.log('tommy gear');
     }
 
 }); 
@@ -17,7 +16,7 @@ var AppStore = assign({}, EventEmitter.prototype, {
 // Register callback to handle all updates
 AppDispatcher.register(function(action) {
 
-    console.log(action.actionType);
+    // console.log(action.actionType);
 
 });
 

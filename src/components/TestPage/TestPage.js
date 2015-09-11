@@ -8,19 +8,20 @@ import styles from './testPage.css';
 import withStyles from '../../decorators/withStyles';
 
 
-
 var getAppState = function() {
+
   return {
     allTodos: AppStore.getAll(),
   }; 
-};
 
+};
 
 @withStyles(styles)
 
 class TestComponent {
 
   handleChange() {
+    console.log(getAppState());
     AppActions.doThing();
   }
 

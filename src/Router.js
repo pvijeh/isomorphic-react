@@ -45,12 +45,9 @@ const router = new Router(on => {
 
   on('/media', async () => <MediaPage />);
 
-  on('/test', async () => <TestPage />);
+  // on('/test', async () => <TestPage />);
 
-  on('*', async (state) => {
-    const content = await http.get(`/api/content?path=${state.path}`);
-    return content && <ContentPage {...content} />;
-  });
+  on('/', async () => <TestPage />);
 
   on('error', (state, error) => state.statusCode === 404 ?
     <App context={state.context} error={error}><NotFoundPage /></App> :
