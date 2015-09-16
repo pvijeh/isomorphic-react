@@ -3,7 +3,7 @@
 import 'babel/polyfill';
 import ReactDOM from 'react-dom';
 import FastClick from 'fastclick';
-import Dispatcher from './core/Dispatcher';
+import AppDispatcher from './core/Dispatcher';
 import Router from './Router';
 import Location from './core/Location';
 import ActionTypes from './constants/ActionTypes';
