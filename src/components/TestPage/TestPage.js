@@ -8,42 +8,77 @@ import styles from './testPage.css';
 import withStyles from '../../decorators/withStyles';
 import WebAPIUtils from '../../core/WebAPIUtils';
 
-WebAPIUtils.getContent();
-
-var getAppState = function() {
+let getAppState = function() {
   return {
     allTodos: AppStore.getAll()
-  }; 
+  };   
 };
 
-// console.log(getAppState());
-
-/// Need to findout how to load initial state using es6 react components 
-
-@withStyles(styles)
-
-class TestComponent {
-
-  constructor () {
-    this.state =  getAppState() 
-  }
 
 
-  handleChange() {
-    // AppActions.receiveContent('action1');
-    console.log(getAppState());
+// inner test component 
+
+class InnerComponent extends React.Component {
+  constructor (props) {
+    super(props)
   }
 
   render() {
     return (
-      <div className="testComponent">
-          <button onClick={this.handleChange}>
-          button test </button>
-          <p>{this.props.blahblah}</p>
+      <div className="InnerComponent">
+          <p>this is an inner component</p>
       </div>
     );
   }
 }
+
+InnerComponent.defaultProps = { allTodos:  {} }
+
+
+// Test Component 
+
+@withStyles(styles)
+
+class TestComponent extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state =  {allTodos: props.allTodos}
+  }
+
+setAllTodos () {
+  this.setState({allTodos : getAppState() }); 
+}
+
+componentDidMount() {
+  WebAPIUtils.getContent(this.setAllTodos());
+  setInterval(this.setAllTodos.bind(this), 300); 
+}
+
+  render() {
+    return (
+      <div className="testComponent">
+          <p>{this.props.blahblah}</p>
+          <InnerComponent/>
+      </div>
+    );
+  }
+}
+
+TestComponent.defaultProps = { allTodos:  {} }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @withStyles(styles)
 
