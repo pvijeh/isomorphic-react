@@ -1,0 +1,6 @@
+{
+  "name": "ContentPressRelease",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContentPressRelease.js"
+}

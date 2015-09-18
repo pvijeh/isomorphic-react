@@ -1,5 +1,10 @@
+
 [
-    {"id": 1, "title": "iPad 4 Mini", "price": 500.01, "inventory": 2, "image": "../common/assets/ipad-mini.png"},
-    {"id": 2, "title": "H&M T-Shirt White", "price": 10.99, "inventory": 10, "image": "../common/assets/t-shirt.png"},
-    {"id": 3, "title": "Charli XCX - Sucker CD", "price": 19.99, "inventory": 5, "image": "../common/assets/sucker.png"}
-]
+{"contentType" :"work", "id" : 1, "contentImage" :"../img/Work-1.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 206, "imgW" : 422},
+{"contentType" :"work", "id" : 2, "contentImage" :"../img/Work-2.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 256, "imgW" : 394},
+{"contentType" :"work", "id" : 3, "contentImage" :"../img/Work-3.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 312, "imgW" : 268},
+{"contentType" :"work", "id" : 4, "contentImage" :"../img/Work-4.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 312, "imgW" : 366},
+{"contentType" :"work", "id" : 5, "contentImage" :"../img/Work-5.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 312, "imgW" : 206},
+{"contentType" :"work", "id" : 6, "contentImage" :"../img/Work-6.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 312, "imgW" : 233},
+{"contentType" :"work", "id" : 7, "contentImage" :"../img/Work-7.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgH" : 312, "imgW" : 233}
+] 

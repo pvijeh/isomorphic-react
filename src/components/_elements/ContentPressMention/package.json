@@ -1,0 +1,6 @@
+{
+  "name": "ContentPressMention",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContentPressMention.js"
+}

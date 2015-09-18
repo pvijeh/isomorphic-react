@@ -1,0 +1,6 @@
+{
+  "name": "ContentAward",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContentAward.js"
+}

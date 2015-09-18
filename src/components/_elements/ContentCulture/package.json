@@ -1,0 +1,6 @@
+{
+  "name": "ContentCulture",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContentCulture.js"
+}
