@@ -2,8 +2,22 @@
 
 @import '../variables.css';
 
-.InnerComponent {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: var(--max-content-width);
+.content {
+  width: 33%;
+ clear:both;
+ position:relative;
+ z-index:4;
+}
+
+.content.w2 { 
+  width: 15.5%; 
+}
+
+.f1_container {
+  position: relative;
+  z-index: 0;
+}
+
+.f1_container {
+  perspective: 1000;
 }

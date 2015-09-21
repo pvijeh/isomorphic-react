@@ -72,22 +72,6 @@ componentDidMount() {
 
 TestComponent.defaultProps = { allTodos:  [] }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@withStyles(styles)
-
 class TestPage extends React.Component {
   constructor () {
     super()
