@@ -1,3 +1,27 @@
 /* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 @import '../variables.css';
+
+.content--work{
+
+}
+
+.content--work .face {
+}
+
+.content--work .f1_card {
+  background-color:white;
+} 
+
+.content--pointOfView {
+    background-color: rgba(75,75,75,.1);
+}
+
+.content--pointOfView .front p{
+    font-size: 22px;
+    font-weight:bold;
+}
+
+.content--pointOfView .front  {
+    padding:45px;
+}

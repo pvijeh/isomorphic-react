@@ -3,10 +3,15 @@
 @import '../variables.css';
 
 .content {
-  width: 33%;
- clear:both;
+width: 33%;
+ display:inline-block;
  position:relative;
  z-index:4;
+ background-color:red;
+}
+
+.content img{
+    max-width: 100%;
 }
 
 .content.w2 { 
@@ -21,3 +26,68 @@
 .f1_container {
   perspective: 1000;
 }
+
+.f1_card { 
+  /*background-color:white; */
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+  clear:both;
+}
+
+/*.f1_container:hover .f1_card {
+  transform: rotateY(180deg);
+}*/
+
+._is_flipped{
+    transform: rotateY(180deg) !important;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility:hidden;
+  -moz-backface-visibility:hidden;
+  -ms-backface-visibility:hidden;
+  -o-backface-visibility:hidden;
+  backface-visibility:hidden;
+}
+
+.face.back {
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+  font-size:24px;
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+  padding:30px;
+}
+
+.back_content {
+    display:table;
+    vertical-align: middle;
+    height:100%;
+    width:100%;
+}
+
+.back_contentInner {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.back_contentInner p{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.imageContainer{
+  overflow: hidden; padding:10px; margin-top:10px; 
+}
+
+
+

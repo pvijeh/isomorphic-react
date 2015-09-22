@@ -15,6 +15,8 @@ import ContentEvent from './ContentEvent/ContentEvent';
 import ContentFact from './ContentFact/ContentFact';
 import ContentCulture from './ContentCulture/ContentCulture';
 
+@withStyles(styles)
+
 //ContentItem Component 
 class ContentItem extends React.Component {
   constructor (props) {
@@ -22,7 +24,9 @@ class ContentItem extends React.Component {
   }
   
   render() {
-        var contentStore;
+        let contentStore = '';
+        let contentStyleMod = ' content--work';
+        let contentBaseStyle = 'content  f1_container';
 
         switch (this.props.item.contentType) {
           case 'work':
@@ -48,13 +52,14 @@ class ContentItem extends React.Component {
             break;
             case 'cultureFact':
             contentStore = <ContentCulture item={this.props.item}/>
+            contentStyleMod = '';
             break;
         }
 
 
         return (
-            <div>
-            {contentStore}
+            <div className={contentBaseStyle+contentStyleMod}>
+                {contentStore}
             </div>
         );
   }

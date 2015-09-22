@@ -17,6 +17,8 @@ let getAppState = function() {
   };   
 };
 
+@withStyles(styles)
+
 // ContentContainer Component 
 
 class ContentContainer extends React.Component {
@@ -41,8 +43,6 @@ class ContentContainer extends React.Component {
 }
 
 // Test Component 
-
-@withStyles(styles)
 
 class TestComponent extends React.Component {
   constructor (props) {

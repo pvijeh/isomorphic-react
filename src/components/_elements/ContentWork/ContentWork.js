@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import styles from './contentWork.css';
 import withStyles from '../../../decorators/withStyles';
 
+@withStyles(styles)
+
 // ContentWork Component 
 class ContentWork extends React.Component {
   constructor (props) {
@@ -12,10 +14,8 @@ class ContentWork extends React.Component {
   
   render() {
     return (
-            <div className="content  f1_container content--work">
-                <div className="imageContainer">
-                    <img src={this.props.item.contentImage} width={this.props.item.imgW} height={this.props.item.imgH}/>
-                </div>
+            <div className="imageContainer">
+                <img src={this.props.item.contentImage} height={this.props.item.imgH} width={this.props.item.imgW}/>
             </div>
     );
   }
