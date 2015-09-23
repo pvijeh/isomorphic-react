@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import styles from './contentCulture.css';
 import withStyles from '../../../decorators/withStyles';
 
+@withStyles(styles)
+
 //ContentItem Component 
 class ContentCulture extends React.Component {
   constructor (props) {
@@ -19,7 +21,6 @@ class ContentCulture extends React.Component {
     );
   }
 }
-
 
 
 export default ContentCulture;

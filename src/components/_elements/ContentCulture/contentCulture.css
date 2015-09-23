@@ -2,8 +2,20 @@
 
 @import '../variables.css';
 
-.LoginPage-container {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: var(--max-content-width);
+/* */
+/* */  /*  culture fact  */ /* */
+/* */
+
+.content--cultureFact {
+    background-color: rgba(75,75,75,.75);
+}
+
+.content--cultureFact .front p{
+    font-size:22px;
+    color:white;
+    font-weight:normal;
+}
+
+.content--cultureFact .front  {
+    padding:25px;
 }

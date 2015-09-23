@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import styles from './contentEvent.css';
 import withStyles from '../../../decorators/withStyles';
 
+@withStyles(styles)
+
 //ContentItem Component 
 class ContentEvent extends React.Component {
   constructor (props) {

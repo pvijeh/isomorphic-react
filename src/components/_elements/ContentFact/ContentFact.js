@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import styles from './contentFact.css';
 import withStyles from '../../../decorators/withStyles';
 
+@withStyles(styles)
+
 //ContentItem Component 
 class ContentFact extends React.Component {
   constructor (props) {

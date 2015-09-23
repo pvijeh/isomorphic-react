@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import styles from './contentPressMention.css';
 import withStyles from '../../../decorators/withStyles';
 
+@withStyles(styles)
+
 //ContentPressMention Component 
 class ContentPressMention extends React.Component {
   constructor (props) {

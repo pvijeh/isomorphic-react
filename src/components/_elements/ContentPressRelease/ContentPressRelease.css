@@ -1,9 +1,19 @@
-/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 @import '../variables.css';
 
-.LoginPage-container {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: var(--max-content-width);
+/* */
+/* */  /* pressRelease  */ /* */
+/* */
+
+.content--pressRelease {
+        background-color: rgba(75,75,75,.25);
+}
+
+.content--pressRelease .front p{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.content--pressRelease .front  {
+    padding:45px;
 }

@@ -2,8 +2,19 @@
 
 @import '../variables.css';
 
-.LoginPage-container {
-  margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: var(--max-content-width);
+/* */
+/* */  /* event style */ /* */
+/* */
+
+.content--event {
+    background-color: rgba(75,75,75,.25);
 }
+
+.content--event .front p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content--event .front  {
+    padding: 20px;
+}   

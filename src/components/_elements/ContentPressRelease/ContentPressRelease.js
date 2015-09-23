@@ -4,6 +4,8 @@ import React, { PropTypes } from 'react';
 import styles from './contentPressRelease.css';
 import withStyles from '../../../decorators/withStyles';
 
+@withStyles(styles)
+
 //ContentItem Component 
 class ContentPressRelease extends React.Component {
   constructor (props) {
