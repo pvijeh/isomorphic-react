@@ -35,7 +35,6 @@ class ContentContainer extends React.Component {
 
     return (
       <div className="InnerComponent">
-          <p>this is an inner component</p>
           <div>{contentItems}</div>
       </div>
     );
@@ -94,7 +93,6 @@ class TestPage extends React.Component {
       <div className="page">
         <div className="pageContainer">
           <h1>{title}</h1>
-            {this.state.n}
           <TestComponent blahblah={this.props.blahblah} />
         </div>
       </div>
