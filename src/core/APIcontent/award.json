@@ -1,0 +1,21 @@
+
+[
+{"contentType" :"work", "id" : 1, "contentImage" :"assets/Work-1.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 206, "imgH" : 422},
+{"contentType" :"work", "id" : 2, "contentImage" :"./assets/Work-2.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 256, "imgH" : 394},
+{"contentType" :"work", "id" : 3, "contentImage" :"./assets/Work-3.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 312, "imgH" : 268},
+{"contentType" :"work", "id" : 4, "contentImage" :"../assets/Work-4.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 312, "imgH" : 366},
+{"contentType" :"work", "id" : 5, "contentImage" :"../assets/Work-5.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 312, "imgH" : 206},
+{"contentType" :"work", "id" : 6, "contentImage" :"../assets/Work-6.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 312, "imgH" : 233},
+{"contentType" :"work", "id" : 7, "contentImage" :"../assets/Work-7.png", "contentHidden" : "this is hidden content ", "contentText" :"this is main text content", "imgW" : 312, "imgH" : 233},
+{"contentType":"pov", "id": 8, "contentImage" :"../img/alisonphoto.jpg", "contentHidden" :"this is hidden content ", "contentText" :"3 Ways VR Can Put The Customer Back in Focus", "contentSource":"Alison Grippo"},
+{"contentType":"pov", "id": 9, "contentImage" :"../img/alisonphoto.jpg", "contentHidden" :"this is hidden content ", "contentText" :"The White Wall Project: Behind the scenes with HOTTEA", "contentSource":"First Last"},
+{"contentType":"pressMention", "id": 10, "contentHidden" :"this is hidden content ", "contentText" :"Reclaiming \"Brand\" and \"Design\"" , "contentSource":"FastCompany", "contentImage" :"../img/fastcompany-logo.jpg"},
+{"contentType":"pressRelease", "id": 11, "contentImage" :"", "contentHidden" :"this is hidden content ", "contentText" : "Sullivan hires Mark Zuckerburg to lead new social media practice"},
+{"contentType":"award", "id": 12, "contentImage" :"../img/webby-logo.jpg", "contentHidden" :"this is hidden content ", "contentText" :"Winner of 2015 \"People's Voice\" Award"},
+{"contentType":"event", "id": 13, "contentHidden" :"this is hidden content ", "contentText" :"PFSK Master Class on Branding", "eventDate" : "OCT 10", "eventCity" : "New York", "eventState" : "NY"},
+{"contentType" : "cultureFact", "id" : 14, "contentHidden" : "this is hidden content ", "contentText" : "643 works of art during our Whitney Museum outing"},
+{"contentType" : "companyFact", "id" : 15, "contentHidden" : "this is hidden content ", "contentText" : "$300B in assets have flowed to a new tech platform we helped Merrill Lynch launch"}
+] 
+
+
+
