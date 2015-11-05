@@ -8,7 +8,6 @@ import Router from './Router';
 import Location from './core/Location';
 import ActionTypes from './constants/ActionTypes';
 import { addEventListener, removeEventListener } from './utils/DOMUtils';
-import ContentDataSorter from './helpers/contentDataSorter.js';
 
 let appContainer = document.getElementById('app');
 let cssContainer = document.getElementById('css');

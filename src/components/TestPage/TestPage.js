@@ -15,6 +15,7 @@ let getAppState = function() {
   return {
     allTodos: AppStore.getAll()
   };   
+  console.log(allTodos);
 };
 
 @withStyles(styles)
@@ -35,7 +36,7 @@ class ContentContainer extends React.Component {
 
     return (
       <div className="InnerComponent">
-          <div>{contentItems}</div>
+          {contentItems}
       </div>
     );
   }
@@ -82,11 +83,11 @@ class TestPage extends React.Component {
   };
 
   static defaultProps = {
-    blahblah: 'blah'
+    blahblah: 'ignore this text please'
   }
 
   render() {
-    let title = 'Test Page';
+    let title = 'Sample home page';
 
     this.context.onSetTitle(title);
     return (

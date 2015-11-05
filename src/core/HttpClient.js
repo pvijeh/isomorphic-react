@@ -1,6 +1,7 @@
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 import request from 'superagent';
+import $ from 'jquery';
 import ExecutionEnvironment from 'fbjs/lib/ExecutionEnvironment';
 
 const getUrl = path => path.startsWith('http') ?

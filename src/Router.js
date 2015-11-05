@@ -4,6 +4,7 @@ import React from 'react';
 import Router from 'react-routing/src/Router';
 import http from './core/HttpClient';
 import App from './components/App';
+import $ from 'jquery';
 import ContentPage from './components/ContentPage';
 import WorkPage from './components/WorkPage';
 import IdeasPage from './components/IdeasPage';
@@ -26,26 +27,17 @@ const router = new Router(on => {
   });
 
   on('/login', async () => <LoginPage />);
-
   on('/register', async () => <RegisterPage />);
-
   on('/work', async () => <WorkPage />);
-
   on('/ideas', async () => <IdeasPage />);
-
   on('/clients', async () => <ClientsPage />);
-
   on('/about', async () => <AboutPage />);
-
   on('/careers', async () => <CareersPage />);
-
   on('/contact', async () => <ContactPage />);
-
   on('/news', async () => <NewsPage />);
+  
+  on('/work/:id', async (req) => <MediaPage />);
 
-  on('/media', async () => <MediaPage />);
-
-  // on('/test', async () => <TestPage />);
 
   on('/', async () => <TestPage />);
 

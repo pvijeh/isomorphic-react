@@ -28,8 +28,12 @@ class ContentItem extends React.Component {
         let contentBaseStyle = 'content  f1_container';
         let contentStyleMod = '';
 
-        switch (this.props.item.contentType) {
-          case 'work':
+        switch (this.props.item.type) {
+            case 'post':
+            contentStore = <ContentWork item={this.props.item}/>
+            contentStyleMod = 'content--work';
+            break;
+            case 'work':
             contentStore = <ContentWork item={this.props.item}/>
             contentStyleMod = 'content--work';
             break;
