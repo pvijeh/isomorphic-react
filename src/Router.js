@@ -5,6 +5,7 @@ import Router from 'react-routing/src/Router';
 import http from './core/HttpClient';
 import App from './components/App';
 import $ from 'jquery';
+
 import ContentPage from './components/ContentPage';
 import WorkPage from './components/WorkPage';
 import IdeasPage from './components/IdeasPage';
@@ -16,6 +17,7 @@ import MediaPage from './components/MediaPage';
 import ContactPage from './components/ContactPage';
 import NotFoundPage from './components/NotFoundPage';
 import ErrorPage from './components/ErrorPage';
+import PostTemplateOne from './components/PostTemplateOne';
 
 import TestPage from './components/TestPage';
 
@@ -36,7 +38,7 @@ const router = new Router(on => {
   on('/contact', async () => <ContactPage />);
   on('/news', async () => <NewsPage />);
   
-  on('/work/:id', async (req) => <MediaPage />);
+  on('/work/:id', async (req) => <PostTemplateOne />);
 
 
   on('/', async () => <TestPage />);
